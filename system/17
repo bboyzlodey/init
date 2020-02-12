@@ -1,2 +1,1 @@
-#ifconfig en0 | grep "vboxnet0" | awk '{print $6}' | arp -a | grep "192" | awk '{print $2}' | cut -d \( -f 2 | cut -d \) -f 1 | grep ".2"
-ssh den@host
+ssh den@192.168.56.2
